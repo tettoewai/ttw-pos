@@ -1,0 +1,8 @@
+# Ignore React build and dependencies
+client/node_modules/
+client/.env
+client/build/
+
+# Ignore Express/node_modules
+server/node_modules/
+server/.env
