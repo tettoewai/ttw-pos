@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Iceberg&display=swap");
+
+:root {
+  --background: #fff;
+  --foreground: #000;
+
+  --page-bg: #e3e3e392;
+  --page-foreground: #000;
+
+  --primary: #ff0000;
+  --primary-hover: #ff5858;
+  --primary-foreground: #ffffff;
+  --primary-gradient: linear-gradient(
+    225deg,
+    rgba(254, 1, 0, 1) 0%,
+    rgba(123, 18, 17, 1) 100%
+  );
+  --primary-gradient-hover: linear-gradient(
+    125deg,
+    rgba(254, 1, 0, 1) 0%,
+    rgba(123, 18, 17, 1) 100%
+  );
+
+  --secondary: #457b9d;
+  --secondary-hover: #35658d;
+  --secondary-foreground: #ffffff;
+
+  --accent: #ffb703;
+  --accent-hover: #e6a102;
+  --accent-foreground: #222222;
+
+  --muted: #e9ecef;
+  --muted-foreground: #555555;
+}
+
+/* Hide scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
