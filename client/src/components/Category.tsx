@@ -9,9 +9,9 @@ export function Category() {
   const [error, setError] = useState<string | null>(null);
 
   const navigate = useNavigate();
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
-  const categoryId = Number(searchParams.get("category"));
+  const categoryId = Number(searchParams.get("category")) || 1;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,8 +40,8 @@ export function Category() {
         return (
           <div
             onClick={() => navigate(`/?category=${item.id}`)}
-            className={`px-2.5 cursor-pointer select-none py-1 rounded-full font-semibold transition-all ${
-              isActive ? "bg-primary text-white" : "border-2 border-primary"
+            className={`px-2.5 cursor-pointer select-none py-1 rounded-full font-semibold transition-colors border-2 ${
+              isActive ? "bg-primary text-white" : "border-primary"
             }`}
             key={item.id}
           >

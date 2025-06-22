@@ -9,9 +9,9 @@ export function Products() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
-  const categoryId = Number(searchParams.get("category"));
+  const categoryId = Number(searchParams.get("category")) || 1;
 
   useEffect(() => {
     const fetchData = async () => {
