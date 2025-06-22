@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useCart } from "../CartContext";
 
 export function Cart() {
-  const { totalItems } = useCart();
+  const { cartItems } = useCart();
   const navigate = useNavigate();
   return (
     <button
@@ -12,9 +12,9 @@ export function Cart() {
     >
       <span className="material-symbols-outlined">shopping_cart</span>
       <span className="sr-only">Cart</span>
-      {totalItems > 0 ? (
+      {cartItems.length > 0 ? (
         <div className="absolute inline-flex items-center justify-center w-6 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2">
-          {totalItems}
+          {cartItems.length}
         </div>
       ) : null}
     </button>

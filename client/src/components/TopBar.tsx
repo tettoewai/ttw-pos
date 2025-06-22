@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Company } from "../../../server/src/shared-types";
 import { config } from "../config";
 import { Cart } from "./Cart";
+import { SearchBar } from "./SearchBar";
 
 export function TopBar() {
   const [company, setCompany] = useState<Company>();
@@ -32,6 +33,9 @@ export function TopBar() {
       <h1 className="font-bold text-primary text-2xl font-iceberg">
         {company?.name}
       </h1>
+      <div className="hidden md:flex">
+        <SearchBar />
+      </div>
       <Cart />
     </div>
   );

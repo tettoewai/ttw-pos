@@ -34,13 +34,13 @@ export function Category() {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div className="flex space-x-3 overflow-x-scroll mt-2 scrollbar-hide p-2">
+    <div className="flex space-x-3 overflow-x-scroll mt-2 mobile-scrollbar-hide p-2">
       {categories?.map((item) => {
         const isActive = item.id === categoryId;
         return (
           <div
             onClick={() => navigate(`/?category=${item.id}`)}
-            className={`px-2.5 cursor-pointer select-none py-1 rounded-full font-semibold transition-colors border-2 ${
+            className={`px-2.5 cursor-pointer text-nowrap select-none py-1 rounded-full font-semibold transition-colors border-2 md:hover:bg-primary md:hover:text-white ${
               isActive ? "bg-primary text-white" : "border-primary"
             }`}
             key={item.id}

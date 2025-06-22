@@ -1,6 +1,6 @@
-import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import CartPage from "./pages/CartPage";
+import { Route, Routes } from "react-router-dom";
 
 export default function App() {
   return (

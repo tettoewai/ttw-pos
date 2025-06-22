@@ -1,11 +1,14 @@
 import express from "express";
-import { getAllProducts, getProductWithCategory } from "../controllers/productController";
+import {
+  getAllProducts,
+  getProductWithCategory,
+  getProductWithSearchParam,
+} from "../controllers/productController";
 
 const router = express.Router();
 
-// GET /api/products
 router.get("/", getAllProducts);
-
-router.get("/:categoryId", getProductWithCategory);
+router.get("/category/:categoryId", getProductWithCategory);
+router.get("/search/:searchTerm", getProductWithSearchParam);
 
 export default router;

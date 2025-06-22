@@ -4,7 +4,10 @@ export function CartItemCard({ cartItem }: { cartItem: CartItem }) {
   const { updateQuantity } = useCart();
   return (
     <div className="h-36 flex items-center justify-between space-x-2 space-y-2 m-1 border rounded-md p-1 overflow-hidden">
-      <img src={cartItem.imageUrl || ""} className="w-32 h-auto object-cover" />
+      <img
+        src={cartItem.imageUrl || ""}
+        className="w-32 md:w-20 h-auto object-cover"
+      />
       <div>
         <h1 className="text-lg font-bold">{cartItem.name}</h1>
         <p className="line-clamp-1">{cartItem.description}</p>

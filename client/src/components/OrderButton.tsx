@@ -5,9 +5,14 @@ import { useNavigate } from "react-router-dom";
 export function OrderButton() {
   const { clearCart } = useCart();
   const navigator = useNavigate();
+  const { totalPrice, totalItems } = useCart();
 
   return (
-    <div className="fixed bottom-1 w-full">
+    <div className="fixed bottom-1 w-full bg-white rounded-t-md">
+      <div className="font-bold mb-2">
+        <h1>Qty: {totalItems}</h1>
+        <h1>Total price: {totalPrice} Ks</h1>
+      </div>
       <button
         onClick={() => {
           clearCart();

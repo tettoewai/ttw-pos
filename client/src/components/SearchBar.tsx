@@ -1,6 +1,29 @@
+import { useEffect, useState } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
+
 export function SearchBar() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (searchTerm) {
+        navigate(`?q=${encodeURIComponent(searchTerm)}`);
+      } else {
+        navigate("");
+      }
+    }, 500);
+    return () => clearTimeout(timeout);
+  }, [searchTerm, navigate]);
+
+  useEffect(() => {
+    const q = searchParams.get("q") || "";
+    setSearchTerm(q);
+  }, [searchParams]);
+
   return (
-    <form className="max-w-md mx-auto p-3">
+    <div className="w-screen md:max-w-lg mx-auto p-3">
       <label
         htmlFor="default-search"
         className="mb-2 text-sm font-medium text-gray-900 sr-only"
@@ -12,11 +35,15 @@ export function SearchBar() {
           <span className="material-symbols-outlined">search</span>
         </div>
         <input
-          type="search"
           id="default-search"
           className="block w-full p-2.5 ps-10 text-sm text-gray-900 border border-gray-300 rounded-full bg-gray-50 focus:ring-primary focus:border-primary"
           placeholder="What are you looking for?"
           required
+          value={searchTerm}
+          onChange={(e) => {
+            e.preventDefault();
+            setSearchTerm(e.target.value);
+          }}
         />
         {/* <button
           type="submit"
@@ -25,6 +52,6 @@ export function SearchBar() {
           Search
         </button> */}
       </div>
-    </form>
+    </div>
   );
 }

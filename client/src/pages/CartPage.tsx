@@ -8,7 +8,7 @@ export default function CartPage() {
   const navigate = useNavigate();
   const { cartItems, clearCart } = useCart();
   return (
-    <div className="relative pb-20">
+    <div className="relative pb-28">
       <div className="fixed top-0 bg-background w-full h-16 flex items-center p-4 justify-between">
         <button
           onClick={() => navigate(-1)}
@@ -31,13 +31,10 @@ export default function CartPage() {
           <span className="material-symbols-outlined text-primary">delete</span>
         </button>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {cartItems.length ? (
           cartItems.map((item) => (
-            <div
-              key={item.id}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2"
-            >
+            <div key={item.id}>
               <CartItemCard cartItem={item} />
             </div>
           ))

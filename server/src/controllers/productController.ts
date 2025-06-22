@@ -18,3 +18,29 @@ export const getProductWithCategory = async (req: Request, res: Response) => {
   });
   res.status(200).json(products);
 };
+
+export const getProductWithSearchParam = async (
+  req: Request,
+  res: Response
+) => {
+  const searchTerm = req.params.searchTerm;
+  const products = await prisma.product.findMany({
+    where: {
+      OR: [
+        {
+          name: {
+            contains: searchTerm,
+            mode: "insensitive",
+          },
+        },
+        {
+          description: {
+            contains: searchTerm,
+            mode: "insensitive",
+          },
+        },
+      ],
+    },
+  });
+  res.status(200).json(products);
+};
