@@ -173,7 +173,7 @@ async function seedDatabase() {
           stock: 25,
           description: "55-inch 4K UHD Smart TV with HDR",
           imageUrl:
-            "https://www.lg.com/us/images/tvs/md07500323/gallery/desktop-01.jpg",
+            "https://media.us.lg.com/transform/ecomm-PDPGallery-1100x730/f9ce7d90-e05d-40c0-ae0b-a34495135b60/TV_OLED77C4PUA_gallery-01_3000x3000",
         },
       }),
       prisma.product.create({
@@ -183,7 +183,7 @@ async function seedDatabase() {
           stock: 40,
           description: "Fitness tracker with heart rate monitor",
           imageUrl:
-            "https://www.fitbit.com/global/content/dam/fitbit/global/pdp/devices/sense-2/charcoal/hero-static/charcoal-device.png",
+            "https://lh3.googleusercontent.com/4WWTkgjVMEuXo6wRDyCx-BHRokMIovpmhWTHmJqHPqGfe0lOIIjURyvJfmMtqwOnCLuV5uB-cchbqtPpJh4b4o3x-SHvkRXRJMPH=s6000-w6000-e365-rw-v0-nu",
         },
       }),
 
@@ -205,7 +205,7 @@ async function seedDatabase() {
           stock: 80,
           description: "Classic fit denim jeans",
           imageUrl:
-            "https://www.levi.com/dw/image/v2/BBRC_PRD/on/demandware.static/-/Sites-LeviMaster-Catalog/default/dw8b3b2d5a/images/hi-res/005010211/005010211-01-main.jpg",
+            "https://lsco.scene7.com/is/image/lsco/A34940057-dynamic1-pdp",
         },
       }),
       prisma.product.create({
@@ -215,7 +215,7 @@ async function seedDatabase() {
           stock: 35,
           description: "Water-resistant winter jacket with insulation",
           imageUrl:
-            "https://www.columbia.com/dw/image/v2/BCDH_PRD/on/demandware.static/-/Sites-columbia-master/default/dw3d9f4a3a/images/hi-res/1819401_010_f.jpg",
+            "https://columbia.scene7.com/is/image/ColumbiaSportswear2/2116291_364_f_om?wid=2304&hei=2418&v=1748944136",
         },
       }),
 
@@ -237,7 +237,7 @@ async function seedDatabase() {
           stock: 100,
           description: "Fresh organic whole milk",
           imageUrl:
-            "https://www.horizon.com/wp-content/uploads/2021/06/horizon-organic-whole-milk-gallon-1.png",
+            "https://www.kesargrocery.com/images/P/stonyfield-organic-milk-half-gallon-whole-500x500-1.png",
         },
       }),
       prisma.product.create({
@@ -247,7 +247,7 @@ async function seedDatabase() {
           stock: 150,
           description: "Freshly baked whole grain bread",
           imageUrl:
-            "https://www.pepperidgefarm.com/wp-content/uploads/2021/06/whole-grain-100-whole-wheat-bread.png",
+            "https://thebusybaker.ca/wp-content/uploads/2015/02/easy-whole-grain-sandwich-bread-fb-ig-6-scaled.jpg",
         },
       }),
 
@@ -269,7 +269,7 @@ async function seedDatabase() {
           stock: 250,
           description: "Smooth writing ballpoint pens",
           imageUrl:
-            "https://www.papermate.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-master-catalog-papermate/default/dw4f8d8c9e/images/large/1952538_PaperMate-InkJoy-300RT-Ballpoint-Pens-Medium-Point-12-Ct-Black-Ink_1.jpg",
+            "https://www.ubuy.com.mm/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFkOHNEWkVGVkwuX0FDX1NMMTUwMF8uanBn.jpg",
         },
       }),
 
@@ -281,7 +281,7 @@ async function seedDatabase() {
           stock: 15,
           description: "Ergonomic office chair with lumbar support",
           imageUrl:
-            "https://www.hermanmiller.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-hmac-master-catalog/default/dw1c4c5b3f/images/aeron/01_Aeron_Chair_Side_Studio_Right_Black_Studio_Front_Open_2000x2000.jpg",
+            "https://www.hermanmiller.com/content/dam/hmicom/page_assets/products/cosm_chairs/it_prd_ovw_cosm_chairs_04.jpg",
         },
       }),
       prisma.product.create({
@@ -291,7 +291,7 @@ async function seedDatabase() {
           stock: 10,
           description: "Solid wood office desk",
           imageUrl:
-            "https://www.ikea.com/us/en/images/products/malm-desk-white__0735968_pe740347_s5.jpg",
+            "https://www.ikea.com/us/en/images/products/kallax-desk-white-stained-oak-effect__1328037_pe944622_s5.jpg",
         },
       }),
 
@@ -313,7 +313,7 @@ async function seedDatabase() {
           stock: 60,
           description: "Genuine leather bifold wallet",
           imageUrl:
-            "https://www.fossil.com/on/demandware.static/-/Sites-fossil-store-catalog/default/dw6c7c4f0e/images/FS5545_1.jpg",
+            "https://olivercompanylondon.com/cdn/shop/files/Premium_Red_Wallet_new_hero_b144648b-5be7-4623-84d3-127e6a28c52a.jpg",
         },
       }),
 
@@ -325,7 +325,7 @@ async function seedDatabase() {
           stock: 30,
           description: "10-piece non-stick cookware set",
           imageUrl:
-            "https://www.calphalon.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1c4c5b3f/images/calphalon/1900006_1.jpg",
+            "https://i5.walmartimages.com/seo/Tramontina-9-Piece-Non-stick-Cookware-Set-Red_cbc0978b-6718-4ed2-9925-386eefd8d206_1.850d1dcf271664201f61e4e372cec316.jpeg",
         },
       }),
       prisma.product.create({
@@ -335,7 +335,7 @@ async function seedDatabase() {
           stock: 25,
           description: "5.8-quart digital air fryer",
           imageUrl:
-            "https://www.ninjakitchen.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-master-catalog-ninja/default/dw1c4c5b3f/images/ninja/40100/40100_ALT1.jpg",
+            "https://cdn.accentuate.io/605666443568/-1695035269432/3-v1695036808948.png?800x800",
         },
       }),
 
@@ -347,7 +347,7 @@ async function seedDatabase() {
           stock: 40,
           description: "Set of 5 popular board games",
           imageUrl:
-            "https://m.media-amazon.com/images/I/91ZSmvPv5JL._AC_UF1000,1000_QL80_.jpg",
+            "https://img.freepik.com/premium-vector/board-game-collection_23-2148720601.jpg",
         },
       }),
       prisma.product.create({
@@ -357,7 +357,7 @@ async function seedDatabase() {
           stock: 50,
           description: "1500-piece LEGO classic bricks set",
           imageUrl:
-            "https://www.lego.com/cdn/cs/set/assets/blt6a5a1b9e3a3a3a3a/10698.jpg",
+            "https://www.lego.com/cdn/cs/set/assets/blt49f484f1e7076fd0/76328_Prod.png",
         },
       }),
 
@@ -369,7 +369,7 @@ async function seedDatabase() {
           stock: 35,
           description: "Complete skincare routine set",
           imageUrl:
-            "https://www.kiehls.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-master-catalog-kiehls/default/dw1c4c5b3f/images/kiehls/2500001_1.jpg",
+            "https://dalba.com/cdn/shop/files/61tE1oPGIFL._SL1080_600x600_crop_center.jpg",
         },
       }),
       prisma.product.create({
@@ -379,7 +379,7 @@ async function seedDatabase() {
           stock: 60,
           description: "Rechargeable electric toothbrush with 3 modes",
           imageUrl:
-            "https://www.oralb.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-master-catalog-oralb/default/dw1c4c5b3f/images/oralb/3764R_1.jpg",
+            "https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/1280x1280/products/1355/10949/VB-IO6TWIN-BG-70__41922__52691.1730131794.jpg?c=1https://cdn11.bigcommerce.com/s-2idmiil7bp/images/stencil/1280x1280/products/1355/10949/VB-IO6TWIN-BG-70__41922__52691.1730131794.jpg",
         },
       }),
 
@@ -391,7 +391,7 @@ async function seedDatabase() {
           stock: 70,
           description: "Eco-friendly non-slip yoga mat",
           imageUrl:
-            "https://www.lululemon.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-master-catalog-lululemon/default/dw1c4c5b3f/images/lululemon/88073_1.jpg",
+            "https://energiefitness.in/cdn/shop/files/YogaMatFeatures.png",
         },
       }),
       prisma.product.create({
@@ -401,7 +401,7 @@ async function seedDatabase() {
           stock: 15,
           description: "4-person waterproof camping tent",
           imageUrl:
-            "https://www.rei.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-master-catalog-rei/default/dw1c4c5b3f/images/rei/1200001_1.jpg",
+            "https://www.rei.com/media/1e47bd14-a38d-42f2-8f0f-94fdb980a983?size=2000",
         },
       }),
 
@@ -413,7 +413,7 @@ async function seedDatabase() {
           stock: 45,
           description: "Smart digital scale with BMI tracking",
           imageUrl:
-            "https://www.withings.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-master-catalog-withings/default/dw1c4c5b3f/images/withings/WS-50_1.jpg",
+            "https://image-cache.withings.com/site/media/wi_products/body-scan-black-kg.webp?src=png&h=948",
         },
       }),
       prisma.product.create({
@@ -423,7 +423,7 @@ async function seedDatabase() {
           stock: 20,
           description: "Deep tissue percussion massage gun",
           imageUrl:
-            "https://www.theragun.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-master-catalog-theragun/default/dw1c4c5b3f/images/theragun/pro4_1.jpg",
+            "https://pttimewithtim.com/wp-content/uploads/2023/03/How-to-use-massage-gun.jpg",
         },
       }),
 
@@ -435,7 +435,7 @@ async function seedDatabase() {
           stock: 90,
           description: "Dashboard car phone holder",
           imageUrl:
-            "https://www.rammount.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-master-catalog-rammount/default/dw1c4c5b3f/images/ram/ram-202-u_1.jpg",
+            "https://i5.walmartimages.com/seo/Frusde-Car-Phone-Holder-Mount-360-Degree-Rotation-Dashboard-Cell-Phone-Holder-for-Car-Clip-Mount-Stand-Suitable-for-4-to-7-inch-Smartphones-Black_0112bdea-35c4-4d0f-a1fc-9ffd4d9d13e0.d4a7ce758c155628a6f396ae77f6721b.jpeg",
         },
       }),
       prisma.product.create({
@@ -445,19 +445,7 @@ async function seedDatabase() {
           stock: 25,
           description: "Portable car battery jump starter",
           imageUrl:
-            "https://www.noco.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-master-catalog-noco/default/dw1c4c5b3f/images/noco/gbx45_1.jpg",
-        },
-      }),
-
-      // Pet Supplies
-      prisma.product.create({
-        data: {
-          name: "Dog Food (20lb)",
-          price: 35000,
-          stock: 40,
-          description: "Premium dry dog food",
-          imageUrl:
-            "https://www.royalcanin.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-master-catalog-royalcanin/default/dw1c4c5b3f/images/royalcanin/1000001_1.jpg",
+            "https://cloreautomotive.com/wp-content/uploads/2021/11/JNC66-web.jpg",
         },
       }),
       prisma.product.create({
@@ -467,7 +455,7 @@ async function seedDatabase() {
           stock: 15,
           description: "Multi-level cat tree with scratching posts",
           imageUrl:
-            "https://www.frisco.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-master-catalog-frisco/default/dw1c4c5b3f/images/frisco/1000001_1.jpg",
+            "https://i5.walmartimages.com/seo/Alden-Design-71-5-H-Multi-Level-Large-Cat-Tree-with-2-Cozy-Perches-and-2-Condos-Light-Gray_b959f3b6-3eff-4bb4-9c9a-832aa300a4fa.4b2e2fb29ce494199471d7c868de6cc9.png",
         },
       }),
     ]);
@@ -556,7 +544,6 @@ async function seedDatabase() {
       { productName: "Jump Starter", categoryName: "Automotive" },
 
       // Pet Supplies
-      { productName: "Dog Food (20lb)", categoryName: "Pet Supplies" },
       { productName: "Cat Tree", categoryName: "Pet Supplies" },
     ];
 
